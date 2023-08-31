@@ -1,0 +1,40 @@
+.cantainer-fluid{
+    margin-top: 50px;
+   
+    font-size: 50px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    
+}
+.cantainer-fluid::before{
+    content: 'Extra Small';
+}
+
+@media(min-width:576px){
+    .cantainer-fluid::before{
+        content: 'Small Device';
+    }
+}
+@media(min-width:768px){
+    .cantainer-fluid::before{
+        content: 'Medium Device';
+    }
+}
+@media(min-width:992px){
+    .cantainer-fluid::before{
+
+        content: 'Large Device';
+    }
+}
+@media(min-width:1200px){
+    .cantainer-fluid::before{
+
+        content: 'Extra Large';
+    }
+}
+@media(min-width:1400px){
+    .cantainer-fluid::before{
+        content:'';
+    }
+}

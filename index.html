@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finding-Screen-Size</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/A.css">
+</head>
+
+<body>
+
+    <div class="cantainer-fluid" id="width">
+
+        <h1>The width</h1>
+        <h1 id="size"></h1>
+
+    </div>
+
+
+
+
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        window.onresize = function (event) {
+            var width = document.getElementById('width').clientWidth;
+            document.getElementById('size').innerHTML = width
+        }
+    </script>
+
+</body>
+
+</html>
